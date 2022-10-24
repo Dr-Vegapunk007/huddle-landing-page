@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  font-family: open Sans;
+  background-color: hsl(257, 40%, 49%);
+  overflow: hidden;
+  overflow-y: auto;
+}
+picture img {
+  position: fixed;
+  height: 100vh;
+}
+
+header img {
+  position: relative;
+  width: 190px;
+  margin-top: 30px;
+  margin-bottom: 5%;
+  margin-left: 45px;
+}
+main {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+.contain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5px;
+}
+main img {
+  width: 600px;
+}
+article {
+  padding-left: 50px;
+}
+h1 {
+  font: normal normal 600 35px Poppins;
+  color: white;
+  max-width: 438px;
+}
+p {
+  font: normal normal 400 15px Open Sans;
+  color: rgba(255, 255, 255, 0.877);
+  max-width: 438px;
+  line-height: 1.5em;
+  margin-bottom: 30px;
+}
+a {
+  font: normal normal 400 15px Poppins;
+  text-decoration: none;
+  background-color: white;
+  padding: 10px 50px 10px 50px;
+  border-radius: 40px;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.534);
+  transition: 0.5s;
+  cursor: pointer;
+}
+a:hover {
+  color: white;
+  background-color: hsl(300, 69%, 71%);
+}
+footer {
+  position: relative;
+  width: 100vw;
+  justify-content: right;
+  height: 70px;
+  text-align: right;
+}
+
+footer svg {
+  width: 35px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+footer svg:hover circle {
+  stroke: hsl(300, 69%, 71%);
+  transition: 0.3s;
+}
+footer svg:hover path {
+  fill: hsl(300, 69%, 71%);
+  transition: 0.3s;
+}
+footer .tweet {
+  padding-right: 8%;
+}
+@media all and (max-width: 989px) and (min-width: 637px) {
+  .contain {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 5px;
+    text-align: center;
+    justify-items: center;
+  }
+  .contain a {
+    margin-right: 0;
+  }
+  h1,
+  p {
+    max-width: 100%;
+  }
+  article {
+    padding: 0;
+  }
+  footer {
+    justify-content: center;
+    height: auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+  footer .tweet {
+    padding-right: 0%;
+  }
+  footer .fb {
+    padding: 0;
+  }
+}
+@media all and (max-width: 636px) {
+  picture img {
+    height: auto;
+    width: 100%;
+  }
+  header img {
+    width: 144px;
+    margin-top: 32px;
+    margin-bottom: 40px;
+    margin-left: 22px;
+  }
+  .contain {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  main img {
+    width: 304px;
+  }
+  article {
+    padding: 32px;
+    text-align: center;
+  }
+  h1 {
+    font: normal normal 600 23px Poppins;
+  }
+  p {
+    font: normal normal 400 16px Open Sans;
+  }
+  a {
+    font: normal normal 400 15px Poppins;
+
+    padding: 8px 55px 8px 55px;
+  }
+  footer {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  footer svg {
+    padding-left: 5px;
+  }
+  footer .tweet {
+    padding-right: 0;
+  }
+  footer .fb {
+    padding-left: 0;
+  }
+}
